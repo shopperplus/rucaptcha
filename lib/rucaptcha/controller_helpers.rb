@@ -3,7 +3,7 @@ module RuCaptcha
     extend ActiveSupport::Concern
 
     included do
-      helper_method :verify_rucaptcha?
+      helper_method :verify_rucaptcha?, :generate_rucaptcha
     end
 
     def rucaptcha_session_id
